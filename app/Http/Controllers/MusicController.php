@@ -17,7 +17,7 @@ class MusicController extends Controller
         $input = $request->all();
  
         $rules = array(
-            'songs.*' => 'required|file|size:100MB|mimes:jpeg,png,jpg,doc,docx,pdf,mp4,mov,ogg,qt,mp3',  //etc
+            'songs.*' => 'required|mimes:mp4,mov,ogg,mp3',  //etc
         );
         
         if(!empty($input)){
